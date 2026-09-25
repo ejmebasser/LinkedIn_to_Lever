@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Recruiter → Lever</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 320px;
+      padding: 16px;
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 12px;
+    }
+
+    #status {
+      margin-top: 12px;
+      font-size: 13px;
+    }
+
+    .candidate-info {
+      margin-top: 12px;
+      padding: 10px;
+      background: #f4f4f4;
+      min-height: 40px;
+      line-height: 1.45;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Recruiter → Lever</h2>
+
+  <button id="saveCandidate">
+    Save Current Candidate
+  </button>
+
+  <select id="candidateSelect">
+    <option value="">No candidates saved</option>
+  </select>
+
+  <div id="candidateInfo" class="candidate-info"></div>
+
+  <button id="fillLever">
+    Fill Lever
+  </button>
+
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
